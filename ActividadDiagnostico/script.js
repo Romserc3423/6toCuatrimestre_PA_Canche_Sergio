@@ -1,9 +1,10 @@
 
 
- const cambiarColor = document.querySelectorAll('li');
+ const items = document.querySelectorAll('li');
 
-cambiarColor.forEach(cambiarColor => {
-    cambiarColor.addEventListener('click', function() {
+items.forEach(item => {
+    item.addEventListener('click', function() {  
         this.classList.toggle('seleccionada');
+
     });
 });

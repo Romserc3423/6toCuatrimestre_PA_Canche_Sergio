@@ -62,5 +62,6 @@ if (isset($_POST['eliminar'])) {
 
 
     <script src="script.js"></script>
+
 </body>
 </html>
