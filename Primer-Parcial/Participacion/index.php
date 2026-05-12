@@ -23,18 +23,20 @@ echo "<br>";
 
 // Ejemplo 5. Invertir una cadena de texto
 
+function invertirCadena($texto)
+{
 
-    $texto = "Perra ayil";
     $array_text = str_split($texto);
 
     $last_Position = array_key_last($array_text);
 
     for ($i = $last_Position; $i >= 0; $i--) {
         echo $array_text[$i];
+
     }
-  
+}
 
-
+echo invertirCadena("Hola Mundo");
 
 
 
