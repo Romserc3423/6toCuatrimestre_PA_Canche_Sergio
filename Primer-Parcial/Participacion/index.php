@@ -10,14 +10,31 @@ function fibonacci($n){
     for ($i=0; $i < $n; $i++) { 
 
         $suma = $n1 + $n2;
-        $n1 = $n2; // ¿Quién debería pasar a ser el número anterior?
+        $n1 = $n2; 
         $n2 = $suma;
         echo $n1 ."</br>";
     }
    
 }
-
 echo fibonacci(10);
+
+echo "<br>";
+
+// Ejemplo 5. Invertir una cadena de texto
+
+function invertirCadena($texto){
+
+        $array_text = str_split($texto);
+        
+        $last_Position = array_key_last($array_text);
+
+    for ($i=$last_Position; $i >= 0 ; $i--) { 
+    echo $array_text[$i];
+
+           }
+}
+
+echo invertirCadena("Hola Mundo");
 
 
 
@@ -25,7 +42,7 @@ echo fibonacci(10);
 
 
 
-<!-- Ejemplo 5. Invertir una cadena de texto -->
+<!--  -->
 
 
 <!DOCTYPE html>
