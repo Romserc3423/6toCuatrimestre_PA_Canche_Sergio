@@ -14,7 +14,9 @@ function fibonacci($n)
         $n1 = $n2;
         $n2 = $suma;
         echo $n1 . "</br>";
+        
     }
+
 
 }
 echo fibonacci(10);
@@ -27,7 +29,6 @@ function invertirCadena($texto)
 {
 
     $array_text = str_split($texto);
-
     $last_Position = array_key_last($array_text);
 
     for ($i = $last_Position; $i >= 0; $i--) {
