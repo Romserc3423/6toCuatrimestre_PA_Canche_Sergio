@@ -69,6 +69,19 @@ function palindromo($text)
 echo "Tu texto " . palindromo("Anita lava la tina") . " es un palindromo </br>";
 
 
+//  <--------------------------------------------------------------------------------------->
+// Ejercicio 5 - Implementa el algoritmo de Euclides utilizando recursividad para calcular el MCD entre dos números. El algoritmo de Euclides, es un algoritmo eficiente utilizado para calcular el MCD de dos números enteros, basado en realizar divisiones sucesivashasta obtener un residuo cero.
+function mcdEuclides($value1, $value2){
+
+if($value2 == 0){
+return $value1;
+}
+$residuo = $value1 % $value2;
+return mcdEuclides($value2, $residuo);
+}
+
+echo "El MCD es: " . mcdEuclides(100, 32)."<br>";
+
 
 //  <--------------------------------------------------------------------------------------->
 // Ejercicio 6 - Convertir decimal a Binario
